@@ -136,9 +136,45 @@ nav {
     gap: 50px;
 }
 
+/* CTA section */
+.cta {
+    padding: 50px 100px;
+
+}
+
+.cta_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 150px;    
+}
+
+.cta_grid > div:last-child {
+    grid-column: span 2; /* Occupa entrambe le colonne */
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.cta p {
+    font-size: 1.3rem;
+    line-height: 25px;
+}
+
+.cta div:last-child>p{
+    font-size: 1.5rem;
+    line-height: 25px;
+}
+
+
 @media (max-width: 1260px) {
     .hero {
         background-position: -700px 0;
+    }
+    .cta {
+        padding: 50px 50px;
+    
     }
 }
 
@@ -146,21 +182,34 @@ nav {
     .hero_txt > h1 {
         font-size: 3rem;
     }
+
+    .cta {
+        padding: 50px 50px;
+    
+    }
+
+    .cta_grid {
+        gap: 50px ;    
+    }
 }
 
 @media (max-width: 768px) {
     .nav_menu {
         display: none;
     }
+
     .layer {
         align-items: center;
     }
+
     .hero_txt {
-        padding: 0 5px;
+        padding: 0 25px;
     }
+
     .hero_txt > span {
         font-size: 1rem;
     }
+
     .hero_btn {
         margin-top: 100px;
         padding: 0 5px;
@@ -168,14 +217,56 @@ nav {
         gap: 50px;
         font-size: 0.8rem;
     }
+
     .hero_btn > .btn {
         padding: 8px 10px;
     }
+
+    .cta {
+        padding: 25px 25px;
+    }
+
+    .cta_grid {
+        grid-template-columns: 1fr;
+    }
     
+    .cta_grid > div:last-child {
+        grid-column: span 1;
+    }
+
+    .cta h2 {
+        font-size: 1.8rem;
+        margin-bottom: 40px;
+    }
+    
+    .cta p {
+        font-size: 1rem;
+        line-height: 25px;
+    }
+    
+    .cta div:last-child>p{
+        font-size: 1.3rem;
+        line-height: 25px;
+    }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 380px) {
     .hero_btn {
         gap: 10px;
+    }
+
+    .cta h2 {
+        font-size: 1.3rem;
+        margin-bottom: 40px;
+    }
+    
+    .cta p {
+        font-size: 0.8rem;
+        line-height: 20px;
+    }
+    
+    .cta div:last-child>p{
+        font-size: 1rem;
+        line-height: 20px;
     }
 }
