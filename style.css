@@ -41,13 +41,13 @@ a {
 .btn_primari {
     
     background-color: var(--principal-color);
-    border: 1px solid var(--secondari-color);
+    border: 1px solid var(--acsent-color2);
     color: var(--acsent-color);
 }
 
 .btn_secondari {
     width: fit-content;
-    border: 1px solid var(--principal-color);
+    border: 1px solid var(--acsent-color2);
     color: var(--principal-color);
 }
 
