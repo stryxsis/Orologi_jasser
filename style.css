@@ -16,8 +16,12 @@
 :root {
     --principal-color: #ffffff;
     --secondari-color: #18181b;
-    --third-color: #f3f4f6;
     --acsent-color: #1f2937;
+    --acsent-color2: #4B3621;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .active {
@@ -139,8 +143,7 @@ nav {
 
 /* CTA section */
 .cta {
-    padding: 50px 100px;
-
+    padding: 100px 100px;
 }
 
 .cta_grid {
@@ -168,14 +171,69 @@ nav {
     line-height: 25px;
 }
 
+/* Skils Section */
+.skils {
+    padding: 50px 100px;
+    background-color: var(--secondari-color);
+    color: var(--principal-color);
+}
+
+.skils > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skils_title {
+    font-size: 2.5rem;
+}
+
+.skils_grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+.skils_card {
+    text-align: center;
+}
+
+.skils_card > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    transform: translateX(-10px);
+}
+
+.skils_card svg{
+    width: 2rem;
+    height: 2rem;
+    color: var(--acsent-color2);
+}
+
+
+.skils_card h3 {
+    font-size: 1.5rem;
+}
+
+.skils_card > p {
+    line-height: 24px;
+    grid-column: span 2; /* Occupa entrambe le colonne */
+    color: #a3a3a3;
+}
+
+
 
 @media (max-width: 1260px) {
     .hero {
         background-position: -700px 0;
     }
-    .cta {
+    .cta,.skils {
         padding: 50px 50px;
-    
     }
 }
 
@@ -184,7 +242,7 @@ nav {
         font-size: 3rem;
     }
 
-    .cta {
+    .cta,.skils {
         padding: 50px 50px;
     
     }
@@ -223,7 +281,7 @@ nav {
         padding: 8px 10px;
     }
 
-    .cta {
+    .cta, .skils {
         padding: 25px 25px;
     }
 
@@ -249,9 +307,18 @@ nav {
         font-size: 1.3rem;
         line-height: 25px;
     }
+
+    .skils_title {
+        font-size: 1.8rem;
+    }
+
+    .skils_grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 150px 50px;
+    }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 430px) {
     .hero_btn {
         gap: 10px;
     }
@@ -269,5 +336,18 @@ nav {
     .cta div:last-child>p{
         font-size: 1rem;
         line-height: 20px;
+    }
+
+    .skils_title {
+        font-size: 1.5rem;
+    }
+
+    .skils_title {
+        font-size: 1.3rem;
+    }
+
+    .skils_grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 100px;
     }
 }
