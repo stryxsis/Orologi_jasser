@@ -222,7 +222,6 @@ nav {
     align-items: center;
     gap: 20px;
     margin-bottom: 30px;
-    transform: translateX(-16px);
 }
 
 .skils_card svg{
