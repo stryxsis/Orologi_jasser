@@ -244,7 +244,7 @@ nav {
 
 /* Footer section */
 footer {
-    padding: 300px 0;
+    padding: 200px 0 100px 0;
     background-color: var(--acsent-color);
     color: var(--principal-color);
 }
@@ -318,7 +318,7 @@ footer > .container {
     }
 
     footer {
-        padding: 100px 50px;
+        padding: 100px 50px 20px 50px;
     }
 }
 
@@ -420,8 +420,8 @@ footer > .container {
         align-items: center;
     }
 
-    .cta, .skils {
-        padding: auto 20px;
+    footer {
+        padding: 200px 0 20px 0;
     }
 }
 
