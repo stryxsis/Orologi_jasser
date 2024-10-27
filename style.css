@@ -25,7 +25,7 @@ body {
 }
 
 .active {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--acsent-color2);
 }
 
 a {
@@ -39,7 +39,6 @@ a {
 }
 
 .btn_primari {
-    
     background-color: var(--principal-color);
     border: 1px solid var(--acsent-color2);
     color: var(--acsent-color);
@@ -57,7 +56,13 @@ header {
     position: fixed;
     width: 100%;
     padding: 0 15px;
-    background-color: var(--principal-color);
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15.1px);
+    -webkit-backdrop-filter: blur(15.1px);
+
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.402);
 }
 
@@ -72,11 +77,18 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: var(--principal-color);
 }
 
 .logo  {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.3rem;
+    
+}
+
+.logo::first-letter{
+    font-size: 2rem;
+    color: var(--acsent-color2);
+    letter-spacing: -2px;
 }
 
 .nav_menu > .nav_ico {
@@ -92,7 +104,7 @@ nav {
 }
 
 .nav_menu > .nav_ico > li:hover {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.418);
+    border-bottom: 1px solid #4b36217a;
 }
 
 /* Hero section */
