@@ -139,6 +139,10 @@ nav {
     font-size: 4rem;
 }
 
+.hamburger{
+    display: none;
+}
+
 .hero_txt > span {
     display: inline-block;
     margin-top: 50px;
@@ -308,9 +312,6 @@ footer > .container {
     .hero {
         background-position: -700px 0;
     }
-    .cta, footer {
-        
-    }
 
     .skils {
         padding: 200px 50px;
@@ -336,12 +337,25 @@ footer > .container {
         display: none;
     }
 
+    .hamburger{
+        display: contents;
+    }
+
+    .hamburger svg {
+        stroke: var(--acsent-color2);
+
+    }
+
     .layer {
         align-items: center;
     }
 
     .hero_txt {
         padding: 0 25px;
+    }
+
+    .hero_txt h1{
+        font-size: 2.3rem;
     }
 
     .hero_txt > span {
@@ -358,6 +372,10 @@ footer > .container {
 
     .hero_btn > .btn {
         padding: 8px 10px;
+    }
+
+    .cta {
+        padding: 250px 50px;
     }
 
     .cta_grid {
@@ -401,9 +419,21 @@ footer > .container {
         justify-content: center;
         align-items: center;
     }
+
+    .cta, .skils {
+        padding: auto 20px;
+    }
 }
 
 @media (max-width: 430px) {
+    .hero_txt h1{
+        font-size: 1.6rem;
+    }
+
+    .hero_txt span{
+        line-height: 20px;
+    }
+
     .hero_btn {
         gap: 10px;
     }
