@@ -355,6 +355,7 @@ footer > .container {
 
   .hamburger svg {
     stroke: var(--acsent-color2);
+    transition: 0.3s;
   }
 
   .nav_menu{
